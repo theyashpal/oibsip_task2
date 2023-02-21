@@ -1,0 +1,439 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.left{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left1{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    padding-left: 80px;
+}
+
+.left1 a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+.left1 a:hover{
+    cursor: pointer;
+    text-decoration-color: greenyellow;
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
+}
+
+.right{
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right1{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 20px;
+}
+
+.right1 a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+.right1 a:hover{
+    cursor: pointer;
+    text-decoration-color: blue;
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
+}
+
+#navbar{
+    font-size: 20px;
+    font-family: serif;
+    padding-right: 120px;
+    background-color: black;
+}
+
+.hr{
+    width: 100vw;
+    border-bottom: 0px; 
+    border-right: 0px; 
+    border-left: 0px;
+}
+
+.content{
+    display: flex;
+    width: 100vw;
+}
+
+.content-l{
+    padding-left: 250px;
+    padding-top: 250px;
+    font-size: 25px;
+    z-index: -1;
+}
+
+.color{
+    color: greenyellow;
+}
+
+.content-r{
+    padding-right: 250px;
+    border-radius: 20px;
+    float: right;
+    margin-top: 200px;
+    padding-right:50px;
+    z-index: 1;
+    margin-left:30px;
+}
+
+img{
+    border-radius: 20px;
+}
+
+.content-r{
+    padding-right: 50px;
+
+}
+
+.about{
+    color:greenyellow;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+.flex-container{
+    display: flex;
+    width: 100vw;
+}
+
+.about-left{
+    padding-top: 50px;
+    padding-left:300px;
+    border-radius: 20px;
+}
+
+.about-right{
+    padding-top: 50px;
+    padding-left: 150px;
+    border-radius: 20px;
+    font-size: larger;
+    padding-right: 200px;
+}
+
+.para{
+    font-weight: bold;
+    font-size: 40px;
+    margin-right: 20px;
+}
+
+.para1{
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.flex-container1{
+    display: flex;
+    width: 100vw;
+}
+
+.skills{
+    color:greenyellow;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+.para2{
+    font-weight: bold;
+    font-size: 40px;
+    padding-right: 370px;
+    float: right;
+    
+}
+
+.img{
+    border-radius: 20px;
+    padding-left:10px;
+    margin-left: 10px;
+    padding-left: 200px;
+}
+
+.flex-container1{
+    object-position: center;
+}
+
+.img1{
+    padding-left: 200px;
+    border-radius: 20px;
+    padding-top: 180px;
+}
+
+.para3{
+    font-size: 20px;
+    line-height: 1.5;
+    padding-left:10px;
+    line-height: 1.5;
+}
+
+.paraskills{
+    padding-left: 100px;
+}
+
+::selection{
+  color: #fff;
+  background: greenyellow;
+  margin-left: 20px;
+}
+
+.skill-bars{
+  padding: 25px 30px;
+  padding-left: 40px;
+  width: 600px;
+  background: #fff;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+
+.skill-bars .bar{
+  margin: 20px 0;
+}
+
+.skill-bars .bar:first-child{
+  margin-top: 0px;
+}
+
+.skill-bars .bar .info{
+  margin-bottom: 5px;
+}
+
+.skill-bars .bar .info span{
+  font-weight: 500;
+  font-size: 17px;
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
+}
+
+@keyframes showText {
+  100%{
+    opacity: 1;
+  }
+}
+
+.skill-bars .bar .progress-line{
+  height: 10px;
+  width: 100%;
+  background: #f0f0f0;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+              0 1px rgba(255,255,255,0.8);
+  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+
+.bar .progress-line span{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: greenyellow;
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+.bar .progress-line.html span{
+  width: 90%;
+}
+
+.bar .progress-line.css span{
+  width: 70%;
+}
+
+.bar .progress-line.javascript span{
+  width: 65%;
+}
+
+.bar .progress-line.tailwind span{
+  width: 70%;
+}
+
+.bar .progress-line.python span{
+  width: 50%;
+}
+
+.bar .progress-line.c-language span{
+  width: 60%;
+}
+
+.bar .progress-line.java span{
+  width: 65%;
+}
+
+.bar .progress-line.mysql span{
+  width: 75%;
+}
+
+.progress-line span::before{
+  position: absolute;
+  content: "";
+  top: -10px;
+  right: 0;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+
+.progress-line span::after{
+  position: absolute;
+  top: -28px;
+  right: 0;
+  font-weight: 500;
+  background: #000;
+  color: #fff;
+  padding: 1px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+
+@keyframes showText2 {
+  100%{
+    opacity: 1;
+  }
+}
+
+.progress-line.html span::after{
+  content: "90%";
+}
+
+.progress-line.css span::after{
+  content: "70%";
+}
+
+.progress-line.javascript span::after{
+  content: "60%";
+}
+
+.progress-line.tailwind span::after{
+  content: "70%";
+}
+
+.progress-line.python span::after{
+  content: "50%";
+}
+
+.progress-line.c-language span::after{
+  content: "60%";
+}
+
+.progress-line.java span::after{
+  content: "65%";
+}
+
+.progress-line.mysql span::after{
+  content: "75%";
+}
+
+.contact{
+  color:greenyellow;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 30px;
+}
+
+.contact-li{
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  border-color: none;
+  font-size: 20px;
+}
+
+.name{
+  border-color: black;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 5px;
+  height: 30px;
+  width: 250px;
+  font-weight: bold;
+}
+
+input[type="text"] :focus{
+  border: 5px solid;
+}
+
+.label{
+  text-align: left;
+}
+
+.name1{
+  border-color: black;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 5px;
+  height: 100px;
+  width: 500px;
+  font-weight: bold;
+}
+
+.submit{
+  text-align: center;
+  object-position: center;
+  border-radius: 5px;
+  margin-left: 750px;
+  width: 70px;
+  height:40px;
+}
+
+.submit:hover{
+  transition-duration: 0.5s;
+  background-color: #C8C1C0;  
+  cursor: pointer;
+  
+}
+
+.footer{
+  background-color: cadetblue;
+  text-align: center;
+  font-size: 30px;
+}
+
+.copy{
+  font-size:15px;
+}
